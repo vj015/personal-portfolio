@@ -1,6 +1,12 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <Home />
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: "Vipul Jain",
+  meta: [],
+  bodyAttrs: {},
+});
+</script>
