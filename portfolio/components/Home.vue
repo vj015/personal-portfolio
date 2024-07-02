@@ -1,37 +1,48 @@
 <template>
-  <div class="bg-slate-900 text-slate-300 font-sans main px-16 py-12">
-    <div
-      class="main__header py-10 text-3xl leading-tight sm:leading-tight sm:text-4xl"
-    >
-      <span>{{ "Hello!" }}</span>
-      <span>
-        <img src="../public/wave.png" alt="Hello" class="w-10 sm:w-12 mx-2"
-      /></span>
-    </div>
-    <div
-      class="main__body py-10 text-3xl leading-tight sm:leading-tight sm:text-4xl md:text-5xl"
-    >
-      <span>{{ "I'm " }}</span
-      ><span class="font-extrabold">{{ "Vipul Jain" }}</span
-      ><span>
-        {{
-          ", a design-minded front-end heavy full stack software engineer focused on building beautiful interfaces, scalable services & experiences"
-        }}</span
+  <div class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row h-screen">
+    <div class="main px-16 py-12">
+      <div
+        class="main__header py-10 text-3xl leading-tight sm:leading-tight sm:text-4xl"
       >
-      <span>
-        <img src="../public/technologist.png" alt="" class="w-10 sm:w-12 mx-2"
-      /></span>
+        <span>{{ "Hello!" }}</span>
+        <span>
+          <img src="../public/wave.png" alt="Hello" class="w-10 sm:w-12 mx-2"
+        /></span>
+      </div>
+      <div
+        class="main__body py-10 text-3xl leading-tight sm:leading-tight sm:text-4xl md:text-5xl"
+      >
+        <span>{{ "I'm " }}</span
+        ><span class="font-extrabold">{{ "Vipul Jain" }}</span
+        ><span>
+          {{
+            ", a design-minded front-end heavy full stack software engineer focused on building beautiful interfaces, scalable services & experiences"
+          }}</span
+        >
+        <span>
+          <img
+            src="../public/technologist.png"
+            alt=""
+            class="w-10 sm:w-12 mx-2"
+        /></span>
+      </div>
+      <div class="main__footer py-10 text-2xl sm:leading-tight">
+        <span>{{ "Get in touch" }}</span>
+        <span>
+          <img src="../public/pointright.png" alt="" class="w-6 mx-2"
+        /></span>
+        <span class="highlight_link">
+          <a href="mailto:vjain2376@gmail.com" target="_blank">{{
+            "vjain2376@gmail.com"
+          }}</a>
+        </span>
+      </div>
     </div>
-    <div class="main__footer py-10 text-2xl sm:leading-tight">
-      <span>{{ "Get in touch" }}</span>
-      <span>
-        <img src="../public/pointright.png" alt="" class="w-6 mx-2"
-      /></span>
-      <span class="highlight_link">
-        <a href="mailto:vjain2376@gmail.com" target="_blank">{{
-          "vjain2376@gmail.com"
-        }}</a>
-      </span>
+    <div class="flex flex-row md:flex-col mx-0 my-auto pr-16 py-12">
+      <div>{{ "Coffee" }}</div>
+      <div>{{ "lines of code" }}</div>
+      <div>{{ "pixels" }}</div>
+      <div>{{ "projects" }}</div>
     </div>
   </div>
 </template>
@@ -41,7 +52,6 @@
   justify-content: space-between;
   margin: 0 auto;
   flex-direction: column;
-  height: 100vh;
 }
 @keyframes wave {
   from {
