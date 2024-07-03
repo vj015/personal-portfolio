@@ -1,8 +1,8 @@
 <template>
   <div
-    class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row h-screen max-w-4xl"
+    class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row max-h-full max-w-full px-12 py-12 items-center"
   >
-    <div class="flex flex-col justify-between">
+    <div class="flex flex-col justify-between items-center md:items-start font-serif">
       <div class="main__header py-10 text-3xl sm:text-4xl leading-tight">
         <span>{{ "Hello!" }}</span>
         <span>
@@ -39,7 +39,7 @@
         </span>
       </div>
     </div>
-    <div>
+    <div class="">
       <Numbers />
     </div>
   </div>

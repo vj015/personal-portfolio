@@ -1,31 +1,31 @@
 <template>
-    <div class="flex flex-row md:flex-col justify-evenly items-center space-y-4 md:space-y-8">
-      <div class="flex flex-col items-center">
-        <div class="font-mono text-3xl md:text-4xl">{{ animatedLines }}</div>
-        <div class="font-semibold text-center">
-          <span class="text-2xl">{{ "lines of code " }}</span>
-          <span class="text-3xl">{{ "</>" }}</span>
+    <div class="flex flex-row md:flex-col items-center py-5 md:py-10 md:px-20 flex-nowrap">
+      <div class="flex flex-col items-center m-2 sm:m-3 md:m-6">
+        <div class="font-mono font-extrabold sm:text-3xl md:text-4xl">{{ animatedLines }}</div>
+        <div class="font-serif md:font-semibold text-center">
+          <span class="sm:text-2xl">{{ "lines of code " }}</span>
+          <span class="sm:text-3xl">{{ "</>" }}</span>
         </div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="font-mono text-3xl md:text-4xl">{{ animatedPixels }}</div>
-        <div class="font-semibold text-center">
-          <span class="text-2xl">{{ "pixels rendered " }}</span>
-          <span class="text-3xl">{{ "🚀" }}</span>
+      <div class="flex flex-col items-center m-2 sm:m-3 md:m-6">
+        <div class="font-mono font-extrabold sm:text-3xl md:text-4xl">{{ animatedPixels }}</div>
+        <div class="font-serif md:font-semibold text-center">
+          <span class="sm:text-2xl">{{ "pixels rendered " }}</span>
+          <span class="sm:text-3xl">{{ "🚀" }}</span>
         </div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="font-mono text-3xl md:text-4xl">{{ animatedCups }}</div>
-        <div class="font-semibold text-center">
-          <span class="text-2xl">{{ "cups of coffee drunk " }}</span>
-          <span class="text-3xl">{{ "☕︎" }}</span>
+      <div class="flex flex-col items-center m-2 sm:m-3 md:m-6">
+        <div class="font-mono font-extrabold sm:text-3xl md:text-4xl">{{ animatedCups }}</div>
+        <div class="font-serif md:font-semibold text-center">
+          <span class="sm:text-2xl">{{ "cups of coffee drunk " }}</span>
+          <span class="sm:text-3xl">{{ "☕︎" }}</span>
         </div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="font-mono text-3xl md:text-4xl">{{ animatedProjects }}</div>
-        <div class="font-semibold text-center">
-          <span class="text-2xl">{{ "projects completed " }}</span>
-          <span class="text-3xl">{{ "🛠️" }}</span>
+      <div class="flex flex-col items-center m-2 sm:m-3 md:m-6">
+        <div class="font-mono font-extrabold sm:text-3xl md:text-4xl">{{ animatedProjects }}</div>
+        <div class="font-serif md:font-semibold text-center">
+          <span class="sm:text-2xl">{{ "projects completed " }}</span>
+          <span class="sm:text-3xl">{{ "🛠️" }}</span>
         </div>
       </div>
     </div>
