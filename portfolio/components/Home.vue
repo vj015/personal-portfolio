@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row h-screen">
+  <div
+    class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row h-screen"
+  >
     <div class="main px-16 py-12">
       <div
         class="main__header py-10 text-3xl leading-tight sm:leading-tight sm:text-4xl"
@@ -38,11 +40,23 @@
         </span>
       </div>
     </div>
-    <div class="flex flex-row md:flex-col mx-0 my-auto pr-16 py-12">
-      <div>{{ "Coffee" }}</div>
-      <div>{{ "lines of code" }}</div>
-      <div>{{ "pixels" }}</div>
-      <div>{{ "projects" }}</div>
+    <div class="flex flex-row md:flex-col mx-0 pr-16 py-12 justify-evenly">
+      <div class="flex flex-col items-center">
+        <div class="font-mono text-3xl md:text-4xl">{{ "134566" }}</div>
+        <div class="font-semibold"><span class="text-2xl">{{ "lines of code " }}</span><span class="text-3xl">{{ "</>" }}</span></div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="font-mono text-3xl md:text-4xl">{{ "301 783 509" }}</div>
+        <div class="font-semibold"><span class="text-2xl">{{ "pixels rendered " }}</span><span class="text-3xl">{{ "🚀" }}</span></div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="font-mono text-3xl md:text-4xl">{{ "1400" }}</div>
+        <div class="font-semibold"><span class="text-2xl">{{ "cups of coffee drunk " }}</span><span class="text-3xl">{{ "☕︎" }}</span></div>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="font-mono text-3xl md:text-4xl">{{ "26" }}</div>
+        <div class="font-semibold"><span class="text-2xl">{{ "projects completed " }}</span><span class="text-3xl">{{ "🛠️" }}</span></div>
+      </div>
     </div>
   </div>
 </template>
