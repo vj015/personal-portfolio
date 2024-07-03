@@ -1,6 +1,7 @@
 <template>
   <div>
     <Home />
+    <Projects />
   </div>
 </template>
 <script setup lang="ts">
