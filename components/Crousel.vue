@@ -13,7 +13,17 @@
       }"
     >
       <SwiperSlide v-for="(slide, idx) in slides" :key="idx">
-        <img :src="`${slide.url}`" />
+        <div v-if="slide.url.length > 0">
+          <img :src="`${slide.url}`" />
+        </div>
+        <div v-else>
+          <iframe
+            src="https://leetcode-badge-showcase.vercel.app/api?username=vj_015"
+            height="600"
+            width="300"
+            title="Leetcode"
+          ></iframe>
+        </div>
       </SwiperSlide>
     </Swiper>
   </div>
@@ -36,7 +46,7 @@ const { slides } = toRefs(props);
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  height: 20vh;
+  height: 100%;
   font-size: 4rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;

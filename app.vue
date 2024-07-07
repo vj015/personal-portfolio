@@ -2,6 +2,7 @@
   <div>
     <Home />
     <Projects />
+    <Skills />
   </div>
 </template>
 <script setup lang="ts">
