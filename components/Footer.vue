@@ -18,14 +18,15 @@
       <p class="font-thin">
         {{ "Feel free to copy. If you need any help, ping me !" }}
       </p>
-      <h1 class="m-4 heading">{{ "Vipul Jain" }}</h1>
+      <h1 class="m-4 text-6xl formathead">{{ "Vipul Jain" }}</h1>
       <p>{{ "Made with ❤ in India" }}</p>
     </div>
   </div>
+  <div class="w-full flex justify-center"><img src="/footer.jpg"></div>
 </template>
 <script setup></script>
 <style>
-.heading {
+.formathead {
   font-family: "Sacramento", cursive;
   text-transform: none;
   font-weight: 400;
