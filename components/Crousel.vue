@@ -19,9 +19,6 @@
         <div v-else>
           <iframe
             src="https://leetcode-badge-showcase.vercel.app/api?username=vj_015"
-            height="600"
-            width="300"
-            title="Leetcode"
           ></iframe>
         </div>
       </SwiperSlide>
