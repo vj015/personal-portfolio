@@ -18,6 +18,7 @@ const slides = ref([
   { url: "../Meta-FE.jpeg" },
   { url: "../adv-react.jpeg" },
   { url: "../PS_I.png" },
+  { url: "../temporal.jpg" },
 ]);
 </script>
 <style></style>

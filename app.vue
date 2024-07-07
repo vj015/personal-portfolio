@@ -1,9 +1,10 @@
 <template>
   <div>
     <Home />
-    <Projects />
-    <Skills />
     <Experience />
+    <Skills />
+    <Projects />
+    <DownloadCV />
   </div>
 </template>
 <script setup lang="ts">

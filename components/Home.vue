@@ -16,7 +16,7 @@
         <span class="font-extrabold">{{ "Vipul Jain" }}</span>
         <span>
           {{
-            ", a design-minded front-end heavy full stack software engineer focused on building beautiful interfaces, scalable services & experiences"
+            ", a design-minded front-end heavy full stack software engineer currently working in Payments and focused on building beautiful interfaces, scalable services & experiences"
           }}
         </span>
         <span>
