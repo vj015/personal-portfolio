@@ -1,0 +1,125 @@
+<template>
+  <div
+    class="max-h-full max-w-full bg-slate-300 text-slate-900 font-serif md:px-12 py-12"
+  >
+    <div class="max-w-4xl mx-auto flex flex-col items-center">
+      <h1 class="text-2xl sm:text-4xl leading-tight m-3">
+        {{ "Professional Experience" }}
+      </h1>
+      <div class="max-w-full my-5">
+        <CrouselSlide :slides="slides" />
+      </div>
+      <div class="flex flex-row flex-wrap m-2 justify-center">
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Vue
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Nuxt
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          React
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Spring
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Reactive Programming
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Temporal
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Tailwind
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Sendgrid
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Java
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Javascript
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Feature Flags
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          Jest
+        </button>
+        <button
+          class="bg-transparent hover:bg-slate-900 text-slate-900 font-semibold hover:text-slate-300 py-2 px-4 border border-slate-900 hover:border-transparent rounded text-xl m-1"
+        >
+          SASS
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="w-screen flex justify-center relative my-4">
+    <p
+      class="absolute top-5 text-3xl sm:text-4xl leading-tight font-serif text-slate-900"
+    >
+      {{ "Download CV" }}
+    </p>
+    <a href="/resume.pdf" download="Vipul_CV">
+      <img src="/public/dwnld.png" @click="downloadResume()" id="cv" />
+    </a>
+  </div>
+</template>
+<script setup>
+const downloadResume = () => {
+  const img = document.getElementById("cv");
+  img.src = "/dwnld.gif";
+};
+const slides = ref([
+  {
+    title: "SDE Intern: Payments Team @ Maersk",
+    content:
+      "During his probation, Vipul worked on the Surcharge Feature MVP 1.0, which is now implemented for US customers. This feature helps Maersk recover costs that are deducted from our bottom line, approximately $2.9 million per month, incurred through credit card payments via Stripe.",
+  },
+  {
+    title: "Associate SDE: Payments Team @ Maersk",
+    content:
+      "Worked on migrating the payment capabilities of MAERSK from the existing Biller Direct system to the new My Finance Space platform as part of the Payments Team. Focused primarily on integrating ICBC UnionPay for Chinese customers and Doku for Indonesian customers.",
+  },
+  {
+    title: "Associate SDE: Payments Team @ Maersk",
+    content:
+      "Led the integration of HSBC Razorpay Payments from Proof of Concept (POC) to MVP 1.0 for Indian customers. This initiative enables digital payments through UPI and internet banking, enhancing the payment experience for customers in India.",
+  },
+  {
+    title: "Associate SDE: Payments Team @ Maersk",
+    content:
+      "In addition to payment integrations with various vendors, Vipul also contributed to side projects including Vue migration, Sitecore integration, Grafana integration for observability, upgrading email templates via SendGrid, and performance enhancements focused on Web Vitals.",
+  },
+  {
+    title: "Associate SDE: Payments Team @ Maersk",
+    content:
+      "Worked on product optimizations and enhancements for MAERSK, which is responsible for collecting approximately $22 billion USD annually from various countries, significantly impacting cash flows. Received the 'Star of the Quarter' award for outstanding performance.",
+  },
+]);
+</script>
+<style></style>

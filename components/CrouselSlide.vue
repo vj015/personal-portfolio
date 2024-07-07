@@ -1,15 +1,9 @@
 <template>
   <div>
     <Swiper
-      :modules="[
-        SwiperAutoplay,
-        SwiperNavigation,
-        SwiperPagination,
-        SwiperEffectCards,
-      ]"
+      :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
       :slides-per-view="1"
       :loop="false"
-      :effect="'cards'"
       :navigation="true"
       :pagination="true"
       :autoplay="{
@@ -18,8 +12,13 @@
       }"
     >
       <SwiperSlide v-for="(slide, idx) in slides" :key="idx">
-        <div>
-          <img :src="`${slide.url}`" />
+        <div class="flex flex-col mx-10 md:mx-50">
+          <p class="font-serif font-thin text-xl underline">
+            {{ slide.title }}
+          </p>
+          <p class="font-serif text-xl my-2">
+            {{ slide.content }}
+          </p>
         </div>
       </SwiperSlide>
     </Swiper>
@@ -54,7 +53,7 @@ const { slides } = toRefs(props);
 }
 
 .swiper-cards {
-  width: 80%;
+  width: 90%;
   height: 90%;
 }
 

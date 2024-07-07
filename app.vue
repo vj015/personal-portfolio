@@ -3,6 +3,7 @@
     <Home />
     <Projects />
     <Skills />
+    <Experience />
   </div>
 </template>
 <script setup lang="ts">
