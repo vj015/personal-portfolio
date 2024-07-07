@@ -5,6 +5,7 @@
     <Skills />
     <Projects />
     <DownloadCV />
+    <Footer />
   </div>
 </template>
 <script setup lang="ts">
