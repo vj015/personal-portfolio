@@ -1,10 +1,15 @@
 <template>
   <div>
     <Swiper
-      :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
+      :modules="[
+        SwiperAutoplay,
+        SwiperNavigation,
+        SwiperPagination,
+        SwiperEffectCards,
+      ]"
       :slides-per-view="1"
-      :loop="true"
-      effect="creative"
+      :loop="false"
+      :effect="'cards'"
       :navigation="true"
       :pagination="true"
       :autoplay="{
@@ -13,13 +18,8 @@
       }"
     >
       <SwiperSlide v-for="(slide, idx) in slides" :key="idx">
-        <div v-if="slide.url.length > 0">
+        <div>
           <img :src="`${slide.url}`" />
-        </div>
-        <div v-else>
-          <iframe
-            src="https://leetcode-badge-showcase.vercel.app/api?username=vj_015"
-          ></iframe>
         </div>
       </SwiperSlide>
     </Swiper>
@@ -54,8 +54,8 @@ const { slides } = toRefs(props);
 }
 
 .swiper-cards {
-  width: 240px;
-  height: 240px;
+  width: 80%;
+  height: 90%;
 }
 
 .swiper-cards .swiper-slide {
