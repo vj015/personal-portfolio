@@ -65,7 +65,9 @@
     </form>
   </div>
   <div class="flex justify-center my-24" v-if="!showForm">
-    <h1 class="m-4 text-6xl formathead">{{ "Thankyou for texting!" }}</h1>
+    <h1 class="m-4 text-6xl formathead">
+      {{ "Thank you! I'll contact you shortly." }}
+    </h1>
   </div>
 </template>
 <script setup>
@@ -86,3 +88,7 @@ const submit = (e) => {
   font-size: 3em !important;
 }
 </style>
+//https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJ_JetHkMNYSpPyiWf2pcw0W4C7P5QUYWYGSVBvXc_UAs1aA/formResponse
+//entry.175308092=Vipul&entry.332484750=vjain2376%40gmail.com&entry.2094425495=Testing+Form
+//entry.175308092=Vipul&entry.332484750=vjain2376%40gmail.com&entry.2094425495=Testing+Form&dlut=1720468715415&fvv=1&partialResponse=%5Bnull%2Cnull%2C%22-8908449102777196539%22%5D&pageHistory=0&fbzx=-8908449102777196539&submissionTimestamp=1720468717306
+//https://docs.google.com/spreadsheets/d/1hCYnjeKMXD7T_pDyAmSy6juKM83X22XwlyqooO6sgnw/edit?resourcekey=&gid=1221869480#gid=1221869480
