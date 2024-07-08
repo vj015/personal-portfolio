@@ -22,7 +22,7 @@
       <p>{{ "Made with ❤ in India" }}</p>
     </div>
   </div>
-  <div class="w-full flex justify-center"><img src="/footer.jpg"></div>
+  <div class="w-full flex justify-center"><img src="/footer.webp"></div>
 </template>
 <script setup></script>
 <style>

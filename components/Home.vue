@@ -1,12 +1,12 @@
 <template>
   <div
-    class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row max-h-full max-w-full px-12 py-3 md:py-12 items-center"
+    class="bg-slate-900 text-slate-300 font-sans flex flex-col md:flex-row max-h-full max-w-full px-12 py-3 md:py-12 items-center justify-between"
   >
     <div class="flex flex-col justify-between items-center md:items-start font-serif">
       <div class="main__header py-10 text-3xl sm:text-4xl leading-tight">
         <span>{{ "Hello!" }}</span>
         <span>
-          <img src="/wave.png" alt="Hello" class="w-10 sm:w-12 mx-2 inline-block align-bottom cursor-pointer" />
+          <img src="/wave.webp" alt="Hello" class="w-10 sm:w-12 mx-2 inline-block align-bottom cursor-pointer" />
         </span>
       </div>
       <div
@@ -21,7 +21,7 @@
         </span>
         <span>
           <img
-            src="/technologist.png"
+            src="/technologist.webp"
             alt="Technologist"
             class="w-10 sm:w-12 mx-2 inline-block align-bottom cursor-pointer"
           />
@@ -30,7 +30,7 @@
       <div class="main__footer py-10 text-2xl sm:leading-tight">
         <span>{{ "Get in touch" }}</span>
         <span>
-          <img src="/pointright.png" alt="Pointing Right" class="w-6 mx-2 inline-block align-bottom cursor-pointer" />
+          <img src="/pointright.webp" alt="Pointing Right" class="w-6 mx-2 inline-block align-bottom cursor-pointer" />
         </span>
         <span class="highlight_link">
           <a href="mailto:vjain2376@gmail.com" target="_blank">{{
@@ -39,8 +39,8 @@
         </span>
       </div>
     </div>
-    <div class="">
-      <Numbers />
+    <div class="hidden md:block">
+      <LazyNumbers />
     </div>
   </div>
 </template>

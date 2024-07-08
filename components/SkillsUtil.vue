@@ -142,6 +142,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 .pentagon {
   position: relative;

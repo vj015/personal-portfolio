@@ -14,11 +14,11 @@
 </template>
 <script setup>
 const slides = ref([
-  { url: "../AlgoToolbox.jpeg" },
-  { url: "../Meta-FE.jpeg" },
-  { url: "../adv-react.jpeg" },
-  { url: "../PS_I.png" },
-  { url: "../temporal.jpg" },
+  { url: "../AlgoToolbox.webp" },
+  { url: "../Meta-FE.webp" },
+  { url: "../adv-react.webp" },
+  { url: "../PS_I.webp" },
+  { url: "../temporal.webp" },
 ]);
 </script>
 <style></style>
