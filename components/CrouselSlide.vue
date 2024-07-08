@@ -1,11 +1,10 @@
 <template>
   <div>
     <Swiper
-      :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
+      :modules="[SwiperAutoplay, SwiperNavigation]"
       :slides-per-view="1"
       :loop="false"
       :navigation="true"
-      :pagination="true"
       :autoplay="{
         delay: 8000,
         disableOnInteraction: true,
@@ -36,7 +35,7 @@ const props = defineProps({
 const { slides } = toRefs(props);
 </script>
 
-<style scoped>
+<style>
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -60,5 +59,12 @@ const { slides } = toRefs(props);
 .swiper-cards .swiper-slide {
   border-radius: 6px;
   border: 1px solid black;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0f172a !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #0f172a !important;
 }
 </style>
