@@ -14,15 +14,22 @@
       <div class="max-w-full md:w-5/6">
         <MessageForm />
       </div>
-      <p class="font-thin">{{ "No copyright" }}&#169;{{ " issues." }}</p>
+      <p class="font-thin">
+        {{ "No copyright "
+        }}<span class="inline-block align-middle"><IconCopyright /></span
+        >{{ " issues." }}
+      </p>
       <p class="font-thin">
         {{ "Feel free to copy. If you need any help, ping me !" }}
       </p>
       <h1 class="m-4 text-6xl formathead">{{ "Vipul Jain" }}</h1>
-      <p>{{ "Made with ❤ in India" }}</p>
+      <p>
+        {{ "Made with " }}<span class="text-red-600">❤</span>{{ " in India" }}
+      </p>
+      <sociallinks />
     </div>
   </div>
-  <div class="w-full flex justify-center"><img src="/footer.webp"></div>
+  <div class="w-full flex justify-center"><img src="/footer.webp" /></div>
 </template>
 <script setup></script>
 <style>
