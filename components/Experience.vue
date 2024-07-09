@@ -104,7 +104,7 @@ const slides = ref([
   {
     title: "Associate SDE: Payments Team @ Maersk",
     content:
-      "Increared unit test coverage, improved performance and optimization for Payments UI application in Maersk which is handling around 35K monthly transactions in different currencies world wide. Received the 'Star of the Quarter' award for outstanding performance.",
+      "Increased unit test coverage, improved performance and optimization for Payments UI application in Maersk which is handling around 35K monthly transactions in different currencies world wide. Received the 'Star of the Quarter' award for outstanding performance.",
   },
 ]);
 </script>
