@@ -72,11 +72,15 @@
 </template>
 <script setup>
 const showForm = ref(true);
-const submit = (e) => {
+const submit = async (e) => {
   e.preventDefault();
-  console.log(e);
-  console.log("Inside submit function");
   showForm.value = false;
+  await useFetch(
+    `https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJ_JetHkMNYSpPyiWf2pcw0W4C7P5QUYWYGSVBvXc_UAs1aA/formResponse?&submit=Submit?usp=pp_url&entry.175308092=${e.target[0].value}&entry.332484750=${e.target[1].value}&entry.2094425495=${e.target[2].value}`,
+    {
+      method: "POST",
+    }
+  );
 };
 </script>
 <style scoped>

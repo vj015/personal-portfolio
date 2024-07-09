@@ -84,12 +84,12 @@ const slides = ref([
   {
     title: "SDE Intern: Payments Team @ Maersk",
     content:
-      "During his probation, Vipul worked on the Surcharge Feature MVP 1.0, which is now implemented for US customers. This feature helps Maersk recover costs that are deducted from our bottom line, approximately $2.9 million per month, incurred through credit card payments via Stripe.",
+      "During probation, Vipul worked on the Surcharge Feature MVP 1.0, which is now implemented for US customers. This feature helps Maersk recover costs that are deducted from our bottom line, approximately $2.9 million per month, incurred through credit card payments via Stripe.",
   },
   {
     title: "Associate SDE: Payments Team @ Maersk",
     content:
-      "Worked on migrating the payment capabilities of MAERSK from the existing Biller Direct system to the new My Finance Space platform as part of the Payments Team. Focused primarily on integrating ICBC UnionPay for Chinese customers and Doku for Indonesian customers.",
+      "Worked on migrating the payment capabilities of MAERSK from the existing Biller Direct system to the new My Finance platform as part of the Payments Team. Focused primarily on integrating UI of ICBC UnionPay for Chinese customers and Doku for Indonesian customers.This system handles approximately 20k transactions per month, accounting for millions of dollars in monthly revenue for Maersk",
   },
   {
     title: "Associate SDE: Payments Team @ Maersk",
@@ -99,12 +99,12 @@ const slides = ref([
   {
     title: "Associate SDE: Payments Team @ Maersk",
     content:
-      "In addition to payment integrations with various vendors, Vipul also contributed to side projects including Vue migration, Sitecore integration, Grafana integration for observability, upgrading email templates via SendGrid, and performance enhancements focused on Web Vitals.",
+      "In addition to payment integrations with various vendors, Vipul also contributed to other projects including Vue migration from V2.6 to V3.2, Sitecore integration, Grafana integration for observability, upgrading email templates via SendGrid, and performance optimizations and enhancements focused on Web Vitals.",
   },
   {
     title: "Associate SDE: Payments Team @ Maersk",
     content:
-      "Worked on product optimizations and enhancements for MAERSK, which is responsible for collecting approximately $22 billion USD annually from various countries, significantly impacting cash flows. Received the 'Star of the Quarter' award for outstanding performance.",
+      "Increared unit test coverage, improved performance and optimization for Payments UI application in Maersk which is handling around 35K monthly transactions in different currencies world wide. Received the 'Star of the Quarter' award for outstanding performance.",
   },
 ]);
 </script>
