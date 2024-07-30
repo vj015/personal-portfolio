@@ -97,12 +97,12 @@ const slides = ref([
       "Led the integration of HSBC Razorpay Payments from Proof of Concept (POC) to MVP 1.0 for Indian customers. This initiative enables digital payments through UPI and internet banking, enhancing the payment experience for customers in India.",
   },
   {
-    title: "Associate SDE: Payments Team @ Maersk",
+    title: "SDE: Payments Team @ Maersk",
     content:
       "In addition to payment integrations with various vendors, Vipul also contributed to other projects including Vue migration from V2.6 to V3.2, Sitecore integration, Grafana integration for observability, upgrading email templates via SendGrid, and performance optimizations and enhancements focused on Web Vitals.",
   },
   {
-    title: "Associate SDE: Payments Team @ Maersk",
+    title: "SDE: Payments Team @ Maersk",
     content:
       "Increased unit test coverage, improved performance and optimization for Payments UI application in Maersk which is handling around 35K monthly transactions in different currencies world wide. Received the 'Star of the Quarter' award for outstanding performance.",
   },
