@@ -5,7 +5,7 @@
     >
       {{ "Download CV" }}
     </p>
-    <a href="/resume.pdf" download="VipulJain_CV">
+    <a href="/resume3.pdf" download="VipulJain_CV">
       <img src="/public/dwnld.webp" @click="downloadResume()" id="cv" />
     </a>
   </div>
